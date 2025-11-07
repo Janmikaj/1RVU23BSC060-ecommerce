@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login — TechStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">🖤 TechStore</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="cart.html">Cart (<span id='cart-count'>0</span>)</a>
+      <a href="admin.html">Admin</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 class="title">Login / Register</h2>
+    <form id="auth-form" class="card admin-form">
+      <input id="u-name" placeholder="Full name (register only)">
+      <input id="u-email" placeholder="Email" required>
+      <input id="u-pass" type="password" placeholder="Password" required>
+      <div style="display:flex;gap:8px;margin-top:8px">
+        <button id="login-btn" type="button" class="btn">Login</button>
+        <button id="register-btn" type="button" class="btn ghost">Register</button>
+      </div>
+    </form>
+    <div id="auth-msg" style="margin-top:12px"></div>
+  </main>
+
+  <footer class="footer">© 2025 TechStore</footer>
+  <script src="script.js"></script>
+</body>
+</html>
